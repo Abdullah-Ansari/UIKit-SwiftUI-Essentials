@@ -54,5 +54,10 @@ class ViewController: UIViewController {
         let vc = UIHostingController(rootView: StockListView())
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func onMoveToDonut(_ sender: UIButton) {
+        let vc = DonutTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

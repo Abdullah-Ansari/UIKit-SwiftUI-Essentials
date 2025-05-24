@@ -16,21 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-Ng-0hv">
-                                <rect key="frame" x="113" y="408.66666666666669" width="167" height="35"/>
-                                <color key="tintColor" red="0.97458154870000002" green="0.99321976209999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Navigate to Stocks"/>
-                                <connections>
-                                    <action selector="onMoveToStock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VpJ-li-CkB"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="snB-oX-wKt">
+                                <rect key="frame" x="113" y="391.66666666666669" width="167" height="68.666666666666686"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8S-Ng-0hv">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="34.333333333333336"/>
+                                        <color key="tintColor" red="0.97458154870000002" green="0.99321976209999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Navigate to Stocks"/>
+                                        <connections>
+                                            <action selector="onMoveToStock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VpJ-li-CkB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6H-cz-Yh5">
+                                        <rect key="frame" x="0.0" y="34.333333333333314" width="167" height="34.333333333333343"/>
+                                        <color key="tintColor" red="0.44417960229999998" green="1" blue="0.99524576760000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Move to Donuts"/>
+                                        <connections>
+                                            <action selector="onMoveToDonut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U5h-R9-Wag"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBrownColor"/>
                         <constraints>
-                            <constraint firstItem="n8S-Ng-0hv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0uJ-iR-GYb"/>
-                            <constraint firstItem="n8S-Ng-0hv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fad-Rz-Xp5"/>
+                            <constraint firstItem="snB-oX-wKt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QmL-yX-FyD"/>
+                            <constraint firstItem="snB-oX-wKt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WIM-rT-ki2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pb7-Nh-SjI"/>
