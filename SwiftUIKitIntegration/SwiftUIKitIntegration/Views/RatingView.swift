@@ -11,18 +11,9 @@ class Rating: ObservableObject {
     @Published var value: Int? = 3
 }
 
-struct RatingViewContainer: View {
-    
-    @ObservedObject var rating: Rating
-    
-    var body: some View {
-        RatingView(rating: $rating.value)
-    }
-}
-
 struct RatingView: View {
     
-    @Binding var rating: Int?
+    @ObservedObject var rating: Rating
     
     var body: some View {
         HStack {
@@ -30,14 +21,14 @@ struct RatingView: View {
                 Image(systemName: starType(index: index))
                     .foregroundColor(.orange)
                     .onTapGesture {
-                        self.rating = index
+                        self.rating.value = index
                     }
             }
         }
     }
     
     private func starType(index: Int) -> String {
-        if let rating = self.rating {
+        if let rating = self.rating.value {
             return index <= rating ? "star.fill" : "star"
         } else {
             return "star"
@@ -46,5 +37,5 @@ struct RatingView: View {
 }
 
 #Preview {
-    RatingView(rating: .constant(4))
+    RatingView(rating: Rating())
 }

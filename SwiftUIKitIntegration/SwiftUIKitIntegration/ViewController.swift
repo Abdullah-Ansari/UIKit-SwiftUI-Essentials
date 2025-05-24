@@ -24,13 +24,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        setupRatingView()
+    }
+    
+    private func setupRatingView() {
         cancellable = rating.$value.sink(receiveValue: { [weak self] value in
             if let value = value {
                 self?.ratingLabel.text = "\(value)"
             }
         })
-        let ratingVC = UIHostingController(rootView: RatingViewContainer(rating: rating))
+        let ratingVC = UIHostingController(rootView: RatingView(rating: rating))
         guard let ratingView = ratingVC.view else { return }
         
         self.addChild(ratingVC)
@@ -44,7 +47,6 @@ class ViewController: UIViewController {
         
         ratingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         ratingLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50).isActive = true
-        
     }
     
     @IBAction func onMoveToStock(_ sender: UIButton) {
@@ -52,7 +54,5 @@ class ViewController: UIViewController {
         let vc = UIHostingController(rootView: StockListView())
         self.navigationController?.pushViewController(vc, animated: true)
     }
-
-
 }
 
