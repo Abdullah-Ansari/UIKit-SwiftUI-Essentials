@@ -16,12 +16,11 @@ struct Stock: Identifiable {
 struct StockListView: View {
     
     let stocks = [
-                 Stock(name: "MSFT", price: 250),
-                 Stock(name: "AAPL", price: 104.56),
-                 Stock(name: "TSLA", price: 450),
-                 Stock(name: "AMZN", price: 120.00),
-                 
-    
+        Stock(name: "MSFT", price: 250),
+        Stock(name: "AAPL", price: 104.56),
+        Stock(name: "TSLA", price: 450),
+        Stock(name: "AMZN", price: 120.00),
+        
     ]
     
     var body: some View {

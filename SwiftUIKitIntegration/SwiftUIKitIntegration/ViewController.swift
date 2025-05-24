@@ -61,3 +61,21 @@ class ViewController: UIViewController {
     }
 }
 
+struct ViewController_Representable: UIViewControllerRepresentable {
+
+    func makeUIViewController(context: Context) -> some UIViewController {
+        ViewController()
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        
+    }
+}
+
+
+struct ViewController_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        ViewController_Representable()
+    }
+}
