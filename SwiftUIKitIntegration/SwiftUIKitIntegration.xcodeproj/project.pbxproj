@@ -16,7 +16,7 @@
 		5068CC192DE2026B00CFB9C7 /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068CC182DE2026B00CFB9C7 /* StockListView.swift */; };
 		5068CC1B2DE2070100CFB9C7 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068CC1A2DE2070100CFB9C7 /* RatingView.swift */; };
 		5068CC1D2DE20ED800CFB9C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068CC1C2DE20ED800CFB9C7 /* ContentView.swift */; };
-		5068CC1F2DE26FBC00CFB9C7 /* CustomMapViewPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068CC1E2DE26FBC00CFB9C7 /* CustomMapViewPin.swift */; };
+		5068CC1F2DE26FBC00CFB9C7 /* CustomMapPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068CC1E2DE26FBC00CFB9C7 /* CustomMapPinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		5068CC182DE2026B00CFB9C7 /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		5068CC1A2DE2070100CFB9C7 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		5068CC1C2DE20ED800CFB9C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5068CC1E2DE26FBC00CFB9C7 /* CustomMapViewPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapViewPin.swift; sourceTree = "<group>"; };
+		5068CC1E2DE26FBC00CFB9C7 /* CustomMapPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapPinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,6 @@
 				5045D31A2DDBBB5B00F5176C /* Assets.xcassets */,
 				5045D31C2DDBBB5B00F5176C /* LaunchScreen.storyboard */,
 				5045D31F2DDBBB5B00F5176C /* Info.plist */,
-				5068CC1E2DE26FBC00CFB9C7 /* CustomMapViewPin.swift */,
 			);
 			path = SwiftUIKitIntegration;
 			sourceTree = "<group>";
@@ -80,6 +79,7 @@
 		5068CC172DE2025E00CFB9C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5068CC1E2DE26FBC00CFB9C7 /* CustomMapPinView.swift */,
 				5068CC182DE2026B00CFB9C7 /* StockListView.swift */,
 				5068CC1A2DE2070100CFB9C7 /* RatingView.swift */,
 				5068CC1C2DE20ED800CFB9C7 /* ContentView.swift */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5045D3162DDBBB5900F5176C /* ViewController.swift in Sources */,
-				5068CC1F2DE26FBC00CFB9C7 /* CustomMapViewPin.swift in Sources */,
+				5068CC1F2DE26FBC00CFB9C7 /* CustomMapPinView.swift in Sources */,
 				5068CC192DE2026B00CFB9C7 /* StockListView.swift in Sources */,
 				5068CC1D2DE20ED800CFB9C7 /* ContentView.swift in Sources */,
 				5045D3122DDBBB5900F5176C /* AppDelegate.swift in Sources */,
